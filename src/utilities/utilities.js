@@ -7,6 +7,7 @@ const callLocalStorage = (key, value) => {
         return JSON.parse(localStorage.getItem(key));
     }
     catch(error) {
+        console.error(error);
         return null;
     }
 }

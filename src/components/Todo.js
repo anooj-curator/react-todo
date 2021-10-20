@@ -12,7 +12,7 @@ const Todo = () => {
     useEffect(() => {
         const storedTodoList = callLocalStorage('todoList');
         storedTodoList && dispatch(addAll(storedTodoList));
-    }, []);
+    }, [dispatch]);
 
     const [itemValue, setItemValue] =useState('');
 
